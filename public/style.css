@@ -1,0 +1,397 @@
+/*----------Global styles----------*/
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.8rem;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    background-color: gray;
+  }
+
+/*----------Form styles----------*/
+.cd-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 4em auto;
+    font-size: 1.3rem;
+    color:black;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .cd-form::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .cd-form legend {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 1px solid #ecf0f1;
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+  
+  .cd-form div {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .cd-form input,
+  .cd-form select {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    color: #2b3e51;
+  }
+  
+  .cd-form input[type="text"],
+  .cd-form input[type="password"],
+  .cd-form input[type="email"],
+  .cd-form input[type="number"],
+  .cd-form select,
+  .cd-form legend {
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+  
+  .cd-form input[type="text"],
+  .cd-form input[type="password"],
+  .cd-form input[type="email"],
+  .cd-form input[type="number"],
+  .cd-form select {
+    padding: 12px;
+    border: 1px solid #cfd9db;
+    background-color: #ffffff;
+    border-radius: 0.25em;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+  }
+  
+  .cd-form input[type="text"]:focus,
+  .cd-form input[type="email"]:focus,
+  .cd-form input[type="password"]:focus,
+  .cd-form input[type="number"]:focus,
+  .cd-form select:focus {
+    outline: none;
+    border-color: #d75069;
+    box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+  }
+  
+  .cd-form .cd-select {
+    position: relative;
+  }
+  
+  .cd-form .cd-select::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/ic_arrow.svg") no-repeat center center;
+    pointer-events: none;
+  }
+  
+  .cd-form select {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+  
+  .cd-form select::-ms-expand {
+    display: none;
+  }
+  
+  .cd-form input[type="submit"] {
+    border: none;
+    background: #343642;
+    border-radius: none;
+    padding: 16px 20px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+  
+  .cd-form input[type="submit"]:focus {
+    outline: none;
+    background: #2b3e51;
+  }
+  
+  .cd-form input[type="submit"]:active {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  
+  .cd-form [required] {
+    background: url("img/ic_required.svg") no-repeat top right;
+  }
+  
+  .cd-form .error-message {
+    display: none;
+  }
+  
+  .cd-form .error-message p {
+    background: #e94b35;
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 0.25em;
+    padding: 16px;
+  }
+  
+  .cd-form .success-message p {
+    background: #4caf50;
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 0.25em;
+    padding: 16px;
+  }
+  
+  .cd-form .error-field {
+    border-color: #e94b35 !important;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .cd-form div {
+      margin: 32px 0;
+    }
+    .cd-form legend + div {
+      margin-top: 20px;
+    }
+    .cd-form input[type="text"],
+    .cd-form input[type="password"],
+    .cd-form input[type="email"],
+    .cd-form input[type="number"],
+    .cd-form select {
+      padding: 16px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #3e3295;
+    background-image: url("");
+  }
+  
+  .box-form {
+    margin: 11 auto;
+    width: 80%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+  }
+  @media (max-width: 980px) {
+    .box-form {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  .box-form div {
+    height: auto;
+  }
+  .box-form .left {
+    color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/55f70367e4b0974cf2b82009/1473360688728-UJMYQ4E4XY4K3GWEIRKV/AdobeStock_80306044.jpg?format=1500w");
+    overflow: hidden;
+  }
+  .box-form .left .overlay {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background: #5961f9ad;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .box-form .left .overlay h1 {
+    font-size: 10vmax;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .box-form .left .overlay span p {
+    margin-top: 30px;
+    font-weight: 900;
+  }
+  .box-form .left .overlay span a {
+    background: #3b5998;
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding: 14px 50px;
+    border-radius: 100px;
+    display: inline-block;
+    box-shadow: 0 3px 6px 1px #042d4657;
+  }
+  .box-form .left .overlay span a:last-child {
+    background: #1dcaff;
+    margin-left: 30px;
+  }
+  .box-form .right {
+    padding: 40px;
+    overflow: hidden;
+  }
+  @media (max-width: 980px) {
+    .box-form .right {
+      width: 100%;
+    }
+  }
+  .box-form .right h5 {
+    font-size: 6vmax;
+    line-height: 0;
+  }
+  .box-form .right p {
+    font-size: 14px;
+    color: #B0B3B9;
+  }
+  .box-form .right .inputs {
+    overflow: hidden;
+  }
+  .box-form .right input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #B0B3B9;
+  }
+  .box-form .right .remember-me--forget-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box-form .right .remember-me--forget-password input {
+    margin: 0;
+    margin-right: 7px;
+    width: auto;
+  }
+  .box-form .right button {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    margin: 10px auto;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px #49c628a6;
+    background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+  }
+  
+  label {
+    display: block;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  label::before {
+    content: ' \f00c';
+    position: absolute;
+    font-family: FontAwesome;
+    background: transparent;
+    border: 3px solid #70F570;
+    border-radius: 4px;
+    color: transparent;
+    left: -30px;
+    transition: all 0.2s linear;
+  }
+  
+  label:hover::before {
+    font-family: FontAwesome;
+    content: ' \f00c';
+    color: #fff;
+    cursor: pointer;
+    background: #70F570;
+  }
+  
+  label:hover::before .text-checkbox {
+    background: #70F570;
+  }
+  
+  label span.text-checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  
+  label input[type="checkbox"] {
+    display: none;
+  }
