@@ -1,0 +1,144 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+  
+  }
+  
+  #allTheThings {
+    width: 90%;
+    max-width: 600px;
+    margin: 4em auto;
+    font-size: 1.3rem;
+    color: #94aab0;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  #allTheThings input[type="button"] {
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background: rgb(113, 164, 169);
+    /* border-radius: 0.25em; */
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    float: right;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+  }
+  
+  #allTheThings input[type="button"]:focus {
+    outline: none;
+    background: rgba(212, 227, 168, 0.933);
+  }
+  
+  #allTheThings input[type="button"]:active {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .section-heading {
+    text-align:center;
+    color:#102C4E;
+    margin-top: 30px;
+    margin-bottom:40px;
+    font-size: 35px;
+  }
+  
+  
+  /* Sizing for Project Containers  */
+  
+  .column-4 {
+    float: left;
+    width: 21%;
+    padding: 10px;
+    margin:20px;
+    height: 90px;
+  }
+  
+  .project-1 {
+    background-color:#428594 ;
+    
+  }
+  
+  .project-2 {
+    background-color:#1ea578;
+  }
+  
+  .project-3 {
+    background-color:#495ed8;
+  }
+  
+  .project-4 {
+    background-color:#d27ce7;
+  }
+  
+  .project-5 {
+    background-color:#F9F7F7;
+  }
+  
+  .project-6 {
+    background-color:gray;
+  }
+  
+  .project-7 {
+      background-color:#87d6a2;
+  }
+  
+  .project-8 {
+    background-color:antiquewhite ;
+    
+  }
+  
+  .project-text {
+    text-align:center;
+    font-size:15px;
+  }
+  .project-2:hover {
+    background-color:#FEDE00;
+  }
+  
+  .project-3:hover {
+     background-color: #FEDE00;
+  }
+  
+  .project-4:hover {
+     background-color: #FEDE00;
+  }
+  
+  .project-5:hover {
+     background-color: #FEDE00;
+  }
+  
+  .project-6:hover {
+     background-color: #FEDE00;
+  }
+  
+  .project-7:hover {
+     background-color: #FEDE00;
+  }
+  .project-1:hover {
+     background-color: #FEDE00;
+  }
+  .project-8:hover {
+     background-color: #FEDE00;
+  }
